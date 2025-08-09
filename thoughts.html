@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train of Consciousness</title>
+    <link rel="stylesheet" href="thoughts.css">
+    <link rel="icon" href="whitecloud.png">
+
+</head>
+<body>
+    <div id="loading">Loading notes...</div>
+    
+    <div class="modal" id="modal">
+        <div class="modal-content" id="modal-content">
+            <div id="full-note-text"></div>
+        </div>
+    </div>
+
+    <!-- Info Modal -->
+    <div class="modal" id="info-modal">
+        <div class="modal-content" id="info-modal-content">
+            <div id="info-content">
+                <p>welcome to my stream of consciousness. this is an interactive visualization of my notes app entries. click on a cloud to read the full note with date.</p>
+                <br>
+                <p>built with love using the Arena API. check out the corresponding channel <a href="https://www.are.na/tulsi-basil/train-of-consciousness-g9snd2s-aia">here</a> </p>
+                <br>
+                <p>audio: Whispers Mix.wav by LozKaye -- https://freesound.org/s/640786/ -- License: Creative Commons 0<br>
+                plus some ipad synth</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Audio element (hidden) -->
+    <audio id="background-audio" loop muted>
+        <source src="thesoundofmythoughts.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Fixed Controls -->
+    <div class="fixed-controls">
+        <!-- Info button (bottom left) -->
+        <button id="info-btn" class="control-btn info-btn">
+            <img src="info-icon.png" alt="Info" class="control-icon">
+        </button>
+        
+        <!-- Audio button (bottom right) -->
+        <button id="audio-btn" class="control-btn audio-btn">
+            <img src="mute-icon.png" alt="Muted" class="control-icon" id="audio-icon">
+        </button>
+    </div>
+
+    <!-- Whispers Mix.wav by LozKaye -- https://freesound.org/s/640786/ -- License: Creative Commons 0 -->
+    <!-- Musical piece - Forgotten dreams by xkeril -- https://freesound.org/s/715068/ -- License: Creative Commons 0 -->
+
+    <script src="thoughts.js"></script>
+</body>
+</html>
